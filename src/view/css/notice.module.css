@@ -1,0 +1,61 @@
+.notice_container { /* Container */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #50586C;
+    justify-content: center;
+    align-items: center;
+}
+
+.notice_centeroid { /* 중심점 */
+    position: relative;
+    width: 800px;
+    height: 800px;
+    background-color: #DCE2F0;
+    border-radius: 15px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.notice_centeroid input {
+    width: 200px;
+    height: 40px;
+    outline: none;
+}
+
+.img_selector { /* img Selector  label 태그의 css */
+    width: 360px;
+    height: 200px;
+    border: 3px dotted black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_selector img{ /* img 태그 css*/
+    width: 40px;
+    height: 40px;
+}
+
+.file_search { /* input 태그의 file 속성 css */
+    display: none;
+}
+
+
+.back_icon { /* 뒤로 가기 버튼 css */
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    cursor: pointer;
+}
+
+/* --------------custom Input css -----------*/
+
+.custom_input {
+    
+}

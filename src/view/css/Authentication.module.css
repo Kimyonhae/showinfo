@@ -1,0 +1,130 @@
+/*  ------------ Login Form-------------------*/
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form.formBox {
+    background-color: white;
+    width: 400px;
+    height: 27rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+div.link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.link a{
+    display: inline-block;
+}
+
+div.feild {
+    width: 68%;
+    height: 5rem;
+}
+
+div.feild input {
+    width: 100%;
+    height: 50%;
+    border: 0.03rem solid black;
+    outline: none;
+}
+
+div.submit{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.submit a{
+    margin: 5px 0;
+    opacity: 0.7;
+    padding-bottom: 5px;
+}
+
+div.submit a:hover{
+    opacity: 1;
+    transition: 0.3s ease-in;
+}
+
+div.submit input{
+    height: 2.5rem;
+    padding: 5px;
+    background-color: #3498db;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    color:  white;
+}
+
+div.submit input:hover{
+    background-color: #2980b9;
+    transition: 0.3s ease-in;
+}
+
+/*  -----------------------------------------*/
+
+
+/*  ------------social Login Form-------------------*/
+div.social_login_form{
+    width: 70%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+div.social_login_form div {
+    display: flex;
+    height: 2.5rem;
+    align-items: center;
+    border: 0.1rem solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+div.social_login_form div:hover {
+    background-color: #eee;
+    transition: 0.3s ease-in;
+}
+
+div.social_login_form div img{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+div.social_login_form div span{
+    width: 100%;
+    text-align: center;
+}
+
+/*  ----------------------------------------------*/
+
+/*  --------------------회원 가입 CSS---------------------*/
+
+div.registerFeild {
+    width: 70%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.registerFeild input{
+    height: 2.2rem;
+    border: 0.03rem solid black;
+    outline: none;
+}
+
+
+/*  -------------------------------------------------*/

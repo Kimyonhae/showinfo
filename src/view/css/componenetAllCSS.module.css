@@ -1,0 +1,26 @@
+div.prettyCircle { /* 예쁜 공 css */
+    background-color: #62C486;
+    margin-right: 0.5rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+div.projectArticleBoxDevice {
+    width: max-content;
+    padding: 0.4rem;
+    height: min-content;
+    border-radius: 20px;
+    background-color: #D8F9E1;
+    color: #62C486;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h5.projectArticleDevice {
+    font-size: 0.9rem;
+    height: 20px;
+    line-height: 1.4rem;
+}
