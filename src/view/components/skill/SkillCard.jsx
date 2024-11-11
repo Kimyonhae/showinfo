@@ -34,6 +34,7 @@ function SkillCard(props) {
             <p>{props.skill.name}</p>
             <div className="skill-content">
                 {props.skill.data.map((val, index) => {
+                    console.log(val.slice(0,-4));
                    const className = val.slice(0,-4); 
                    return(
                     <div key={index} id="imgBox" className={className}>

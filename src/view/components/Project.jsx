@@ -16,26 +16,22 @@ function Project(props) {
         // project-img 들의 className들을 정의 
     },[]);
 
-    const classNamesImgFunction = (img_length) => {
-        const list_number = Array.from({length : img_length}, (v="project-imgViewer-",i) => {
-            return`${v}${i+1}`
-        });
-        console.log(list_number);
-        
-        // css 부여
-        list_number.map((className, index) => {
-            if(index == 0){
-                console.log(className);
-            }else {
-                
-            }
-        });
-    }
-    //console.log(data);
-    return (       
+    const [currentImg, setCurrentImg] = useState(Array.from({length : data.length}, (_,k) => 0));
+
+    const nextImgViewEvent = (project_img, id) => {
+        if(currentImg[id - 1] < project_img.length - 1){
+            setCurrentImg((prevList) => prevList.map((val, index) => index == id-1 ? val + 1 : val));
+        }
+    };
+
+    const prevImgViewEvent = (id) => {
+        if(currentImg[id - 1] > 0){
+            setCurrentImg((prevList) => prevList.map((val, index) => index == id - 1 ? val - 1 : val));
+        }
+    };
+    return (     
         <>
             {data.map((project, index) => {
-                classNamesImgFunction(project.project_img.length);
                 return(
                         <div key={index} ref={projectRef} className="project-container">
                             <div className="project-centeroid">
@@ -63,18 +59,32 @@ function Project(props) {
                                     </ul>
                                 </article>
                                 <div className="project-content">
-                                    {
-                                        project.project_img.map((imgPath, index) => {
-                                            return <img  key={index} className={`project-imgViewer-${index}`} src={`src/assets/file_img/showinfo/${imgPath}.png`} alt="이미지"/>
-                                        })
-                                    }
+                                    <div className="project-imgWrapper">
+                                        <div className="project-imgBox" style={{
+                                            transform: `translateX(-${currentImg[project.id - 1] * 100}%)`,
+                                        }}>
+                                        {
+                                            project.project_img.map((imgPath, index) => {
+                                                return <img id="project-imgView"  key={index}  src={`src/assets/file_img/showinfo/${imgPath}.png`} alt={`이미지 ${index + 1}`}/>
+                                            })
+                                        }
+                                        </div>
+                                    </div>
                                     <nav className="project-nav">
                                         <div className="project-function">
-                                            <button className="project-prevButton">P R E V</button>
-                                            <button className="project-nextButton">N E X T</button>
+                                            <button onClick={() => prevImgViewEvent(project.id)} className="project-prevButton">P R E V</button>
+                                            <button onClick={() => nextImgViewEvent(project.project_img, project.id)} className="project-nextButton">N E X T</button>
                                         </div>
                                         <button className="project-visitButton">VISIT S I T E</button>
                                     </nav>
+                                    
+                                    <div className="project-progress">
+                                        <ul>
+                                            {project.project_img.map((_, index) => {
+                                                return <li key={index} style={index == currentImg[project.id - 1] ? {backgroundColor : '#D8F9E1'} : null}>{index + 1}</li>
+                                            })}
+                                        </ul>
+                                    </div>
 
                                     <ul className="project-avatar-detail">
                                         <li>제로부터 만들어본 슬라이드 구현</li>

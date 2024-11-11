@@ -14,7 +14,8 @@ const skillObject = [
         "data" : [
             "nodejs.svg",
             "mysql.svg",
-            "django.svg"
+            "django.svg",
+            "sqlite.svg",
         ],
     },
     {   
@@ -31,6 +32,7 @@ const skillObject = [
         "data" : [
             "githubs.svg",
             "vsc.svg",
+            "docker.svg",
         ],
     },
 ]

@@ -35,7 +35,6 @@ function Header(props){
                     <li onClick={() => moveScrollHome(0,0)}>H O M E</li>
                     <li onClick={() => moveScrollHome(700,2)}>S K I L L</li>
                     <li onClick={() => moveScrollHome(1400,3)}>P R O J E C T</li>
-                    <li onClick={() => moveScrollHome(2240,0)}>L A S T</li> {/* 커리어가 생기면 넣을 생각임 */}
                 </ul>
                 {/* 
                     <div className="header-right">
