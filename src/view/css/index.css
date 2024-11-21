@@ -3,17 +3,16 @@
 
 * {
     font-family: "Black Han Sans", sans-serif;
+    margin: 0;
+    padding: 0;
     font-weight: 400;
     font-style: normal;
+    box-sizing: border-box;
 }
 body::-webkit-scrollbar { 
     display: none;
 }
 body ,h1,h2,h3,h4,h5,p{ 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
     -ms-overflow-style: none; /* 인터넷 익스플로러 firegox는 드래그 Bar가 있을까..? */
 }
 
@@ -45,6 +44,7 @@ a , button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1rem;
 }
 
 /*-------------- header-logo ------------*/
@@ -75,7 +75,7 @@ a , button {
     background-color: #3498db;
     border: 0;
     border-radius: 0.3rem;
-    font-size: 17px;
+    font-size: 1rem;
     color: white;
     margin: 0 5px;
     padding: 10px;
@@ -93,8 +93,8 @@ a , button {
 
 
 .content-centeroid {
-    width: 1000px; /* 절대 값 width*/
-    height: 500px;
+    width: 1100px; /* 절대 값 width*/
+    height: 600px;
     padding:  50px;
     margin: 0 auto;
     display: flex;
@@ -140,11 +140,12 @@ a , button {
 .left-content-box li {
     width: 90%;
     position: relative;
+    margin: 0.2rem 0;
     padding: 1rem;
     border-radius: 1rem;
     text-align: center;
     background-color: #d6dde4;
-    
+    font-size: 0.8rem;
 }
 
 /*---------------------------------------*/
@@ -189,6 +190,7 @@ a , button {
 .skill-container {
     height: 700px;
     background-color: #cde8fa;
+
 }
 
 .skill-centeroid {
@@ -207,6 +209,7 @@ a , button {
 
 .skill-bottom {
     display: grid;
+    height: inherit;
     grid-template-columns: repeat(4,1fr);
 }
 
@@ -304,7 +307,7 @@ div#imgBox { /* relative를 위해 만듬. */
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    height: 1000px;
+    height: 100vh;
 }
 
 
@@ -364,6 +367,7 @@ ul.project-article-detail {
 
 .project-content { /*Project 에서 오른쪽 이미지를 담을 공간*/
     width: 800px;
+    padding: 10px;
     border-radius: 15px;
     position: relative;
     background-color: #FFF;
@@ -416,7 +420,7 @@ button.project-prevButton, button.project-nextButton {
 }
 
 ul.project-avatar-detail {
-    height: 180px;
+    height: 9rem;
     background-color: #F6F8FA;
     margin: 0 1rem;
     list-style-type: circle;
@@ -495,3 +499,165 @@ div.project-progress ul li {
     width: 50px;
 }
 /*---------------------------------------*/
+
+
+
+/*------------반응형----------------*/
+
+@media (max-width: 1400px) {
+    .project-container{
+        height: 100%;
+    }
+    .project-centeroid {
+        flex-direction: column;
+    }
+
+    .project-article {
+        margin: 10px 0;
+        padding: 10px;
+        width: 700px;
+        height: fit-content;
+    }
+    ul.project-article-detail {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: fit-content;
+    }
+
+    .project-content {
+        padding: 10px;
+        width: 700px;
+        height: fit-content;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header-centeroid {
+        width: 900px;
+    }
+    .content-centeroid {
+        width: 900px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header-centeroid {
+        width: 700px;
+    }
+    .content-centeroid {
+        width: 700px;
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+    .left-content {
+        margin: 20px 0 0 0;
+        width: 100%;
+    }
+    .left-content-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);    
+    }
+    .left-content-box li{
+        padding: 0;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-content-box img {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    .right-content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 1100px) {
+    .skill-container {
+        height: 100%;
+    }
+    
+    .skill-centeroid {
+        width: 700px;
+    }
+    .skill-bottom {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center; 
+        align-items: center; 
+        gap: 10px;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .header-centeroid {
+        width: 500px;
+    }
+    .content-centeroid {
+        width: 500px;
+    }
+    .left-content-box li{
+        padding: 10px;
+        height: 60px;
+    }
+    .left-content-box li img{
+        left: -5px;
+        top: -5px;
+    }
+
+    .skill-centeroid {
+        width: 500px;
+        padding: 0;
+        
+    }
+    .project-container {
+        height : 100%;
+        padding: 20px 0;
+    }
+    .project-article {
+        width: 450px;
+    }
+    .project-content {
+        width: 450px;
+    }
+    ul.project-article-detail {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .header-centeroid {
+        font-size: 0.7rem;
+    }
+    .content-centeroid {
+        width: 400px;
+    }
+    .left-content-box {
+        grid-template-columns: repeat(2, 1fr);    
+    }
+}
+
+@media (max-width: 500px) {
+    .header-centeroid {
+        font-size: 0.;
+        width: 100%;
+    }
+
+    .skill-centeroid {
+        width: 400px;
+    }
+    .skill-bottom {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media (max-width: 400px) {
+    .content-container {
+        width: 300px; /* 화면의 90% 너비 */
+        margin: 0 auto; /* 좌우 가운데 정렬 */
+    }
+}
+
