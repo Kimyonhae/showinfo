@@ -45,7 +45,7 @@ function Card(props) {
                         ❌
                     </span> :
                     props.skill.map((stack, index) => 
-                        <img className={styles.skillImg} key={index} src={`src/assets/icon/${stack}`} alt={stack}/> 
+                            <img className={styles.skillImg} key={index} src={`src/assets/icon/${stack}`} alt={stack}/> 
                     )
                 }
                 </div>

@@ -73,3 +73,20 @@ div.CardBottomNotUrl {
     overflow-x: auto;
     white-space: nowrap;
 }
+
+
+@media (max-width : 500px) {
+    div.project_article_card {
+        width: 90%;
+        margin: 0.2rem auto;
+    }
+    span.CardBottom {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width : 320px) {
+    span.CardBottom {
+        font-size: 0.5rem;
+    }
+}

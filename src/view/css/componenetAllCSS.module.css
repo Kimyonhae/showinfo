@@ -24,3 +24,10 @@ h5.projectArticleDevice {
     height: 20px;
     line-height: 1.4rem;
 }
+
+
+@media (max-width: 500px) {
+    h5.projectArticleDevice {
+        font-size: 0.8rem;
+    }
+}

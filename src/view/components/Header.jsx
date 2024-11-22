@@ -38,19 +38,20 @@ function Header(props){
     ]);
 
     return(
-        <header ref={headerRef} className="header-container">
-            <div className="header-centeroid">
-                <div className="header-logo">
-                    <a href="/"><img className="header-logo-img" src="src\assets\logo.png"/></a>
+        <>
+            <header ref={headerRef} className="header-container">
+                <div className="header-centeroid">
+                    <div className="header-logo">
+                        <a href="/"><img className="header-logo-img" src="src\assets\logo.png"/></a>
+                    </div>
+                    <ul className="header-center">    {/* 중앙 Header 내용 */}
+                        <li onClick={() => moveScroll(0)}>H O M E</li>
+                        <li onClick={() => moveScroll(1)}>S K I L L</li>
+                        <li onClick={() => moveScroll(2)}>P R O J E C T</li>
+                    </ul>
                 </div>
-                <ul className="header-center">    {/* 중앙 Header 내용 */}
-                    <li onClick={() => moveScroll(0)}>H O M E</li>
-                    <li onClick={() => moveScroll(1)}>S K I L L</li>
-                    <li onClick={() => moveScroll(2)}>P R O J E C T</li>
-                </ul>
-                
-            </div>
-        </header>
+            </header>
+        </>
     );
 }
 
