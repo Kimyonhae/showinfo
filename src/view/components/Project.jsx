@@ -32,6 +32,7 @@ function Project(props) {
     return (     
         <>
             {data.map((project, index) => {
+                console.log(project);
                 return(
                         <div key={index} ref={projectRef} className="project-container">
                             <div className="project-centeroid">
@@ -87,9 +88,9 @@ function Project(props) {
                                     </div>
 
                                     <ul className="project-avatar-detail">
-                                        <li>제로부터 만들어본 슬라이드 구현</li>
-                                        <li>개발 언어 상세 이름 js 동작 구현</li>
-                                        <li>제로부터 만들어본 간단한 스크롤 구현</li>
+                                        {project.keywords.map((content, index) => {
+                                            return <li key={index}>{content}</li>
+                                        })}
                                     </ul>
                                 </div>
                             </div>
