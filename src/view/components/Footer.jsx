@@ -12,9 +12,6 @@ function Footer(props){
                 <a href="https://github.com/Kimyonhae?tab=repositories" target="_blank">
                     <img src="src/assets/icon/githubs.svg" alt="githubs.svg"/>
                 </a>
-                <a href="https://www.notion.so/invite/f4f7bfd186f387702230885330e3a1575118eeb0" target="_blank">
-                    <img src="src/assets/icon/notion.svg" alt="githubs.svg"/>
-                </a>
             </div>
 
             <span>
