@@ -7,7 +7,7 @@ export const data = [
         "summary" : "ShowInfo는 포트폴리오 프로젝트를 보관하고 관리하기 위해 React로 만든 웹사이트입니다. 작은 프로젝트들도 잊지 않고 한 곳에 문서화하여 저장할 수 있도록 했습니다.",
         "url_link" : [
             {"urlImg" : "./social/github.svg" ,"subject" : "GITHUB URL" , "URL" : "https://github.com/Kimyonhae?tab=repositories", "isUrl" : true},
-            {"urlImg" : "./icon/url.svg","subject" : "URL" ,"URL" : "https://www.showinfo.vercel.app", "isUrl" : true},
+            {"urlImg" : "./icon/url.svg","subject" : "URL" ,"URL" : "https://showinfo.vercel.app", "isUrl" : true},
             {"subject" : "FrontEnd","skill" : ["javascript.svg","react.svg"], "isUrl" : false},
             {"subject" : "BackEnd" ,"skill" : [], "isUrl" : false },
         ],
