@@ -29,10 +29,15 @@ function Project(props) {
             setCurrentImg((prevList) => prevList.map((val, index) => index == id - 1 ? val - 1 : val));
         }
     };
+
+    // 홈페이지 접속 함수
+    const visitHomePage = (link) => {
+        window.location.href = link;
+    };
+
     return (     
         <>
             {data.map((project, index) => {
-                console.log(project);
                 return(
                         <div key={index} ref={projectRef} className="project-container">
                             <div className="project-centeroid">
@@ -76,7 +81,7 @@ function Project(props) {
                                             <button onClick={() => prevImgViewEvent(project.id)} className="project-prevButton">P R E V</button>
                                             <button onClick={() => nextImgViewEvent(project.project_img, project.id)} className="project-nextButton">N E X T</button>
                                         </div>
-                                        <button className="project-visitButton">VISIT S I T E</button>
+                                        <button className="project-visitButton" onClick={() => visitHomePage(project.url_link[1]['URL'])}>VISIT S I T E</button>
                                     </nav>
                                     
                                     <div className="project-progress">
