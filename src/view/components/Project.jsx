@@ -71,7 +71,7 @@ function Project(props) {
                                         }}>
                                         {
                                             project.project_img.map((imgPath, index) => {
-                                                return <img id="project-imgView"  key={index}  src={`src/assets/file_img/showinfo/${imgPath}.png`} alt={`이미지 ${index + 1}`}/>
+                                                return <img id="project-imgView"  key={index}  src={`./file_img/showinfo/${imgPath}.png`} alt={`이미지 ${index + 1}`}/>
                                             })
                                         }
                                         </div>

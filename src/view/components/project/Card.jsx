@@ -29,7 +29,7 @@ function Card(props) {
                 <div className={styles.cardInfoBox}>
                     <div className={styles.CardTitleBox}>
                         <strong id={styles.Card} className={styles.CardTop}>{props.cardName}</strong>
-                        <img onClick={() => showCopyBox(props.url)} className={styles.Card_img} src="src/assets/icon/link.png" alt="null"/>
+                        <img onClick={() => showCopyBox(props.url)} className={styles.Card_img} src="./icon/link.png" alt="null"/>
                     </div>
                     <span id={styles.Card} className={styles.CardBottom}>
                         {props.url} 
@@ -45,7 +45,7 @@ function Card(props) {
                         ❌
                     </span> :
                     props.skill.map((stack, index) => 
-                            <img className={styles.skillImg} key={index} src={`src/assets/icon/${stack}`} alt={stack}/> 
+                            <img className={styles.skillImg} key={index} src={`./icon/${stack}`} alt={stack}/> 
                     )
                 }
                 </div>

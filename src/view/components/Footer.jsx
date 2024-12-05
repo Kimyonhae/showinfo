@@ -10,7 +10,7 @@ function Footer(props){
         <div ref={footerRef} className="footer-container">
             <div className="footer-svg">
                 <a href="https://github.com/Kimyonhae?tab=repositories" target="_blank">
-                    <img src="src/assets/icon/githubs.svg" alt="githubs.svg"/>
+                    <img src="./icon/githubs.svg" alt="githubs.svg"/>
                 </a>
             </div>
 

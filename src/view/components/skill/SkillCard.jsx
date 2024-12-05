@@ -37,7 +37,7 @@ function SkillCard(props) {
                    const className = val.slice(0,-4); 
                    return(
                     <div key={index} id="imgBox" className={className}>
-                        <img onMouseOver={(event) => hoverEvent(event, className)} src={`src/assets/icon/${val}`}  alt={val}/>
+                        <img onMouseOver={(event) => hoverEvent(event, className)} src={`./icon/${val}`}  alt={val}/>
                     </div>
                    ); 
                 })}
