@@ -645,6 +645,9 @@ div.project-progress ul li {
         font-size: 0.;
         width: 100%;
     }
+    .left-content-box {
+        display: flex;
+    }
 
     .skill-centeroid {
         width: 400px;
