@@ -7,7 +7,10 @@ const skillObject = [
         "data" : [
             "flutter.svg",
             "react.svg",
-            "typescript.svg"
+            "typescript.svg",
+            "swift.svg",
+            "swiftui.svg",
+            "uikit.svg",
         ],
     },{   
         "name" : "백엔드",
