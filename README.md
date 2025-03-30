@@ -14,21 +14,19 @@
 
 ## 🛠️ 기술 스택
 
-- **프로그래밍 언어**: JavaScript  
-- **프레임워크**: React  
-- **스타일링**: CSS  
+- **프로그래밍 언어**: JavaScript
+- **프레임워크**: React
+- **스타일링**: CSS
 - **배포 플랫폼**: Vercel
 
 ---
 
 ## 🌐 웹사이트 링크
 
-[ShowInfo - 포트폴리오 관리 웹사이트](https://yourwebsite.com)  
-*위 링크는 프로젝트 배포 후 업데이트하세요.*
-
----
+## [ShowInfo - 포트폴리오 관리 웹사이트](https://showinfo-407ebsxj5-kimyonhaes-projects.vercel.app/)
 
 ## 문의
+
 **궁금한 점이나 개선 사항이 있다면 아래로 연락 주세요.**
 
 - **Email**: yoho1019@naver.com
