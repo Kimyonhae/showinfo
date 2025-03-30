@@ -18,23 +18,4 @@ export const data = [
             "Mobile UI 최적화"
         ]
     },
-    {
-        "id" : 2,
-        "device" : "WEB", //web OR iphone 둘중에 선택
-        "title" : "YcnHub",
-        "working_time" : "2023년 5월 21일 ~ 2023년 8월 4일",
-        "summary" : "가족이 함께 사용할 수 있는 NAS 서버를 구현하기 위해, 온프레미스 방식을 활용하여 웹 호스팅을 통해 가정용 클라우드 저장소를 만들어 보았습니다",
-        "url_link" : [
-            {"urlImg" : "./social/github.svg" ,"subject" : "GITHUB URL" , "URL" : "https://github.com/Kimyonhae/YcnHub", "isUrl" : true},
-            {"urlImg" : "./icon/url.svg","subject" : "URL" ,"URL" : "http://ycnhub.메인.한국", "isUrl" : true},
-            {"subject" : "FrontEnd","skill" : ["javascript.svg","django.svg"], "isUrl" : false},
-            {"subject" : "BackEnd" ,"skill" : ["django.svg"], "isUrl" : false },
-        ],
-        "project_img" : ["ycnhub1","ycnhub2","ycnhub3"],
-        "keywords" : [
-            "슬라이드 구현 및 PAM 로그인 구현",
-            "파일 시스템을 이용한 CRUD",
-            "download 기능 및 호스트 Ubuntu 설정"
-        ]
-    }
 ];
